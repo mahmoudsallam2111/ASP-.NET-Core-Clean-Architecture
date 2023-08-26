@@ -1,0 +1,5 @@
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\HR.LeaveManagement.Infrastructure.Services\obj\Debug\net7.0\HR.LeaveManagement.Infrastructure.Services.csproj.AssemblyReference.cache
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\HR.LeaveManagement.Infrastructure.Services\obj\Debug\net7.0\HR.LeaveManagement.Infrastructure.Services.GeneratedMSBuildEditorConfig.editorconfig
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\HR.LeaveManagement.Infrastructure.Services\obj\Debug\net7.0\HR.LeaveManagement.Infrastructure.Services.AssemblyInfoInputs.cache
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\HR.LeaveManagement.Infrastructure.Services\obj\Debug\net7.0\HR.LeaveManagement.Infrastructure.Services.AssemblyInfo.cs
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\HR.LeaveManagement.Infrastructure.Services\obj\Debug\net7.0\HR.LeaveManagement.Infrastructure.Services.csproj.CoreCompileInputs.cache

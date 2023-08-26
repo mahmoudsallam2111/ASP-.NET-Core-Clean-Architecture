@@ -14,6 +14,8 @@ public class LeaveAllocation:BaseEntity
     public LeaveType? LeaveType { get; set; }
     public int LeaveTypeId { get; set; }    
 
-    public int Peroid { get; set; }
+    public int Peroid { get; set; }     // usualy refers to year
+
+    public string EmployeeId { get; set; } = string.Empty;
 
 }
