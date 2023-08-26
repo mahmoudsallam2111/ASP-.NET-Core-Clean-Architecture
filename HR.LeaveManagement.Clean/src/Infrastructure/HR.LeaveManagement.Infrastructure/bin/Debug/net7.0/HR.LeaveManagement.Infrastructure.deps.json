@@ -10,6 +10,7 @@
         "dependencies": {
           "HR.LeaveManagement.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0"
         },
         "runtime": {

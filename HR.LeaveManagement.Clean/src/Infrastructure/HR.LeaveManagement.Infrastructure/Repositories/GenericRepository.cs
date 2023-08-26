@@ -39,7 +39,7 @@ namespace HR.LeaveManagement.Infrastructure.Repositories
 
         public async Task<T?> GetAsync(int id)
         {
-            return await db.Set<T>().FindAsync(id);
+            return await db.Set<T>().SingleOrDefaultAsync(a=>a.Id ==id);
         }
 
         public async Task UpdateAsync(T entity)
