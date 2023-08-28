@@ -43,7 +43,6 @@ namespace HR.LeaveManagement.Application.Features.leaveType.Commands.UpdateLeave
             }
 
             // 2- convert to domain object
-
             var LeaveTypeToUpdate = mapper.Map<LeaveType>(request);
 
             // 3- update to db

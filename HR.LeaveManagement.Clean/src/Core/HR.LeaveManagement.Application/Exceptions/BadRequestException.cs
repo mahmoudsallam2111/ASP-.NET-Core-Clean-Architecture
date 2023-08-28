@@ -10,17 +10,25 @@ namespace HR.LeaveManagement.Application.Exceptions
         }
         public BadRequestException(string Message, Task<FluentValidation.Results.ValidationResult> validationResult) : this(Message)
         {
+            ValidationErrors = new Dictionary<string, string[]>();
 
-            validationErrors = new();
-
-            foreach (var error in validationResult.Result.Errors)
+            if (validationResult != null && validationResult.Result != null)
             {
-                validationErrors.Add(error.ErrorMessage);
+                foreach (var error in validationResult.Result.Errors)
+                {
+                    if (!ValidationErrors.ContainsKey(error.PropertyName))
+                    {
+                        ValidationErrors.Add(error.PropertyName, new string[] { error.ErrorMessage });
+                    }
+                    else
+                    {
+                        ValidationErrors[error.PropertyName] = ValidationErrors[error.PropertyName].Concat(new string[] { error.ErrorMessage }).ToArray();
+                    }
+                }
+
             }
-
         }
-
-        public List<string> validationErrors { get; set; }
+      public IDictionary<string, string[]> ValidationErrors { get; set; }
 
     }
 }

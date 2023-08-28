@@ -31,16 +31,16 @@ namespace HR.LeaveManagement.Application.Features.leaveType.Commands.UpdateLeave
                 .LessThan(100)
                .WithMessage("{PropertyName} should be greater than 100");
 
-            RuleFor(p => p)
-                .MustAsync(LeaveTypeNameUnique).WithMessage("LeaveType Name must be Unique");
+            //RuleFor(p => p)
+            //    .MustAsync(LeaveTypeNameUnique).WithMessage("LeaveType Name must be Unique");
         }
 
         private async Task<bool> leaveTypeMustExits(int id, CancellationToken token)
         {
-           var res = await leaveTypeRepository.GetAsync(id);
+            var res = await leaveTypeRepository.GetAsync(id);
             if (res == null)
             {
-              return  false;
+                return false;
             }
             else
             {

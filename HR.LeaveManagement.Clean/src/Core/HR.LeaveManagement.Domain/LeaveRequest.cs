@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HR.LeaveManagement.Domain;
 
-public class LeaveRequest: BaseEntity
+public class LeaveRequest: BaseEntity<int>
 {
     
     [ForeignKey(nameof(LeaveType))]

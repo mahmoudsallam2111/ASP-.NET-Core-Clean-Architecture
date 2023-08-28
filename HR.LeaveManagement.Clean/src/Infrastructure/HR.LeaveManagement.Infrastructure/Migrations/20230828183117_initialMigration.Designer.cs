@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HR.LeaveManagement.Infrastructure.Migrations
 {
     [DbContext(typeof(HrDatabaseContext))]
-    [Migration("20230826180658_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230828183117_initialMigration")]
+    partial class initialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -129,8 +129,8 @@ namespace HR.LeaveManagement.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2023, 8, 26, 21, 6, 58, 667, DateTimeKind.Local).AddTicks(7560),
-                            DateModified = new DateTime(2023, 8, 26, 21, 6, 58, 667, DateTimeKind.Local).AddTicks(7612),
+                            DateCreated = new DateTime(2023, 8, 28, 21, 31, 17, 386, DateTimeKind.Local).AddTicks(34),
+                            DateModified = new DateTime(2023, 8, 28, 21, 31, 17, 386, DateTimeKind.Local).AddTicks(84),
                             DefaultDays = 5,
                             Name = "Illness"
                         });

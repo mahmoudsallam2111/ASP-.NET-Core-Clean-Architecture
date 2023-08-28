@@ -126,8 +126,8 @@ namespace HR.LeaveManagement.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2023, 8, 26, 21, 6, 58, 667, DateTimeKind.Local).AddTicks(7560),
-                            DateModified = new DateTime(2023, 8, 26, 21, 6, 58, 667, DateTimeKind.Local).AddTicks(7612),
+                            DateCreated = new DateTime(2023, 8, 28, 21, 31, 17, 386, DateTimeKind.Local).AddTicks(34),
+                            DateModified = new DateTime(2023, 8, 28, 21, 31, 17, 386, DateTimeKind.Local).AddTicks(84),
                             DefaultDays = 5,
                             Name = "Illness"
                         });

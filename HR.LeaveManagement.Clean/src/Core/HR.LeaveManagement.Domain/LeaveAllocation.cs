@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Domain;
 
-public class LeaveAllocation:BaseEntity
+public class LeaveAllocation:BaseEntity<int>
 {
     public int NumbersOfDays { get; set; }
 

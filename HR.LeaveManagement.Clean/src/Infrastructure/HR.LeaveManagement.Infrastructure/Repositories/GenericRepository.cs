@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Infrastructure.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
+    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity<int>
     {
         protected readonly HrDatabaseContext db;
 
@@ -39,11 +39,12 @@ namespace HR.LeaveManagement.Infrastructure.Repositories
 
         public async Task<T?> GetAsync(int id)
         {
-            return await db.Set<T>().SingleOrDefaultAsync(a=>a.Id ==id);
+            return await db.Set<T>().AsNoTracking().SingleOrDefaultAsync(a=>a.Id ==id);
         }
 
         public async Task UpdateAsync(T entity)
         {
+          //  db.Update(entity);
             db.Entry(entity).State = EntityState.Modified;
            await db.SaveChangesAsync();
         }

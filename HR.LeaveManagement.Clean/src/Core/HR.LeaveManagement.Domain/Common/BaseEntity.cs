@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Domain.Common
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity<T>
     {
-          public int Id { get; set; }
+          public required T Id { get; set; }
           public DateTime? DateCreated { get; set; }
           public DateTime? DateModified { get; set; }
 

@@ -30,7 +30,7 @@ namespace HR.LeaveManagement.Infrastructure.DatabaseContext
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            foreach (var entry in base.ChangeTracker.Entries<BaseEntity>()
+            foreach (var entry in base.ChangeTracker.Entries<BaseEntity<int>>()
                 .Where(a=>a.State == EntityState.Modified || a.State == EntityState.Added)
                 )
             {

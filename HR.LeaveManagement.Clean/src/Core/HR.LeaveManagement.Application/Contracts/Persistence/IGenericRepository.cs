@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HR.LeaveManagement.Application.Contracts.Persistence;
 
-public interface IGenericRepository<T> where T : BaseEntity
+public interface IGenericRepository<T> where T : BaseEntity<int>
 {
     Task<T?> GetAsync(int id);
     Task<IReadOnlyList<T>> GetAllAsync();
