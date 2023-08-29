@@ -5,7 +5,10 @@ namespace HR.LeaveManagement.Domain;
 
 public class LeaveRequest: BaseEntity<int>
 {
-    
+    public string RequestingEmployeeId { get; set; } = string.Empty;
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
+
     [ForeignKey(nameof(LeaveType))]
     public int LeaveTypeId { get; set; }
     public LeaveType? LeaveType { get; set; }
@@ -14,8 +17,5 @@ public class LeaveRequest: BaseEntity<int>
     
     public bool? Approved { get; set; }
     public bool? Cancelled { get; set; }
-
-
-    public string RequestingEmployeeId { get; set; } = string.Empty;    
 
 }
