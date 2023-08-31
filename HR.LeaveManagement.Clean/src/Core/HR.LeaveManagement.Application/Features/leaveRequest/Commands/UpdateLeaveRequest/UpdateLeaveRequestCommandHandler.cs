@@ -60,7 +60,7 @@ namespace HR.LeaveManagement.Application.Features.leaveRequest.Commands.UpdateLe
                 {
                     To = string.Empty,
                     Subject = "leave request updated",
-                    Body = $"you leave request for {request.StartDate:D}" +
+                    Body = $"your leave request for {request.StartDate:D}" +
                            $" to {request.EndDate:D} has been updated successfully"
                 };
 

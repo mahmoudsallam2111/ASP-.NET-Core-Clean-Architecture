@@ -43,7 +43,6 @@ namespace HR.LeaveManagement.API.Controllers
         }
 
 
-        [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

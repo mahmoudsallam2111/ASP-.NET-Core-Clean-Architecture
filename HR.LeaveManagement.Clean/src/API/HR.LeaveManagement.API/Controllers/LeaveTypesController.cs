@@ -47,8 +47,7 @@ namespace HR.LeaveManagement.API.Controllers
             return CreatedAtAction(nameof(Get), new {id = response});
         }
 
-        // PUT api/<LeaveTypesController>/5
-        [HttpPut("{id}")]
+
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
