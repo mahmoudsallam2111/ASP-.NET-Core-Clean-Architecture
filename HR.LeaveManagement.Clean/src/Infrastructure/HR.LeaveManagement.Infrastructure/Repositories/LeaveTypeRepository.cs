@@ -22,5 +22,11 @@ namespace HR.LeaveManagement.Infrastructure.Repositories
             // false == false    true
             return await db.leaveTypes.AnyAsync(x => x.Name == name) == false;
         }
+
+        public  async Task<bool> leaveTypeMustExits(int id)
+        {
+            return await db.leaveTypes.AnyAsync(a=>a.Id == id); 
+           
+        }
     }
 }

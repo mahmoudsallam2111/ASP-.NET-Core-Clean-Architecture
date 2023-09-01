@@ -37,15 +37,7 @@ namespace HR.LeaveManagement.Application.Features.leaveType.Commands.UpdateLeave
 
         private async Task<bool> leaveTypeMustExits(int id, CancellationToken token)
         {
-            var res = await leaveTypeRepository.GetAsync(id);
-            if (res == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
+            return await leaveTypeRepository.leaveTypeMustExits(id);
 
         }
 

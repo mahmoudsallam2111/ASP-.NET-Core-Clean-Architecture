@@ -14,24 +14,24 @@ namespace HR.LeaveManagement.Application.Features.leaveType.Commands.CreateLeave
 
         public CreateLeaveTypeCommandValidator(ILeaveTypeRepository leaveTypeRepository)
         {
+            this.leaveTypeRepository = leaveTypeRepository;
             RuleFor(p => p.Name)
-                .NotEmpty().WithMessage("Name should not be Empty")
+                .NotEmpty().WithMessage("{PropertyName} should not be Empty")
                 .NotNull()
-                .MaximumLength(100).WithMessage("Name must be less than 100 char");
+                .MaximumLength(100).WithMessage("{PropertyName} must be less than 100 char");
 
             RuleFor(p => p.DefaultDays)
                 .GreaterThan(1).WithMessage("{PropertyName} should not be greater than 100")
                 .LessThan(100)
                .WithMessage("{PropertyName} should be greater than 100");
 
-            RuleFor(p => p)
+            RuleFor(p => p.Name)
                 .MustAsync(LeaveTypeNameUnique).WithMessage("LeaveType Name must be Unique");
-            this.leaveTypeRepository = leaveTypeRepository;
         }
 
-        private Task<bool> LeaveTypeNameUnique(CreateLeaveTypeCommand command, CancellationToken token)
+        private Task<bool> LeaveTypeNameUnique(string name, CancellationToken token)
         {
-            return leaveTypeRepository.IsLeaveTypeUnique(command.Name);
+            return  leaveTypeRepository.IsLeaveTypeUnique(name);
         }
     }
 }
