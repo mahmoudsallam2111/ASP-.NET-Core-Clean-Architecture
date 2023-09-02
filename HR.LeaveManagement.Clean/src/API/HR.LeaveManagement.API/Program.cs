@@ -2,6 +2,7 @@ using HR.LeaveManagement.API.MiddleWare;
 using HR.LeaveManagement.Application;
 using HR.LeaveManagement.Infrastructure;
 using HR.LeaveManagement.Infrastructure.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddApplicationService();
 builder.Services.AddPersistenceService(builder.Configuration);
 builder.Services.AddInfrastructureService(builder.Configuration);
+#endregion
+
+#region Register Serilog
+builder.Host.UseSerilog((context, config) => config.WriteTo.Console()
+.ReadFrom.Configuration(context.Configuration)) ;
 #endregion
 
 #region Cors Configuration
@@ -47,6 +53,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// add serilog middleware
+app.UseSerilogRequestLogging();
+
+// add cors middleWare
+app.UseCors("all");
 
 app.UseAuthorization();
 

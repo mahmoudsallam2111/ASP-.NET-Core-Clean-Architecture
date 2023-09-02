@@ -1,0 +1,11 @@
+2023-09-02 16:44:09.092 +03:00 [INF] Now listening on: https://localhost:7028
+2023-09-02 16:44:09.115 +03:00 [INF] Now listening on: http://localhost:5006
+2023-09-02 16:44:09.117 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-02 16:44:09.117 +03:00 [INF] Hosting environment: Development
+2023-09-02 16:44:09.118 +03:00 [INF] Content root path: E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API
+2023-09-02 16:44:26.307 +03:00 [INF] Leave type retrieved successfully
+2023-09-02 16:44:26.323 +03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 840.3541 ms
+2023-09-02 16:44:27.784 +03:00 [INF] HTTP OPTIONS /api/LeaveTypes/9 responded 204 in 0.9261 ms
+2023-09-02 16:44:27.992 +03:00 [INF] HTTP DELETE /api/LeaveTypes/9 responded 204 in 201.8366 ms
+2023-09-02 16:44:29.199 +03:00 [INF] Leave type retrieved successfully
+2023-09-02 16:44:29.199 +03:00 [INF] HTTP GET /api/LeaveTypes responded 200 in 11.0991 ms

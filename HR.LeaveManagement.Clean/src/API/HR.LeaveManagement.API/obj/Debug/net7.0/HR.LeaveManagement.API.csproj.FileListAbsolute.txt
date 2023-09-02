@@ -92,3 +92,12 @@ E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API
 E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.pdb
 E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\obj\Debug\net7.0\HR.LeaveManagement.API.genruntimeconfig.cache
 E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\obj\Debug\net7.0\ref\HR.LeaveManagement.API.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\Mahmoud Ali\ASP-.NET-Core-Clean-Architecture\HR.LeaveManagement.Clean\src\API\HR.LeaveManagement.API\bin\Debug\net7.0\Serilog.Sinks.File.dll
